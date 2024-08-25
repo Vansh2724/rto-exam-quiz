@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px;
+}
+
+.search-container, .update-container {
+    margin: 20px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #ff8800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+#updateButton {
+    background-color: #007bff;
+}
+
+#deleteButton {
+    background-color: #ff0000;
+}
+
+#showalldataButton {
+    background-color: #28a745;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <div class="search-container">
+        <button id="showalldataButton">Show all data</button>
+    </div>
+    <div class="update-container">
+        <input type="text" id="updateid" placeholder="Id">
+        <input type="text" id="updateName" placeholder="Name">
+        <input type="text" id="updateScore" placeholder="Score">
+        <input type="text" id="updateResult" placeholder="Result">
+        <button id="updateButton">Update</button>
+        <button id="deleteButton">Delete</button>
+    </div>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+   
+    <script src="admin.js"></script>
+</body>
+</html>

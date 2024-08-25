@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Driving License Exam Quiz</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Driving License Exam Quiz</h1>
+    </div>
+    <div class="quiz-container">
+        <header>
+            <div class="progress">
+                Question <span id="QueCount">1</span> of 15
+            </div>
+            <div id="score">
+                <div id="correct-score"><span id="correct">0</span><span>&nbsp; &#10004;</span></div>
+                <div id="incorrect-score"><span id="incorrect">0</span><span>&nbsp; &#10008; </span></div>
+            </div>
+        </header>
+        <div class="que-block">
+        <div class="question">
+            <span>Q.</span>
+            <p id="Question"></p>
+        </div>
+    </div>
+        <ul class="options">
+            <li>
+                <label class="option-label">
+                    <input type="radio" name="answer" value="A">
+                    Option A: <span id="opa"> </span> 
+                </label>
+            </li>
+            <li>
+                <label class="option-label">
+                    <input type="radio" name="answer" value="B">
+                    Option B: <span id="opb"> </span>
+                </label>
+            </li>
+            <li>
+                <label class="option-label">
+                    <input type="radio" name="answer" value="C">
+                    Option C: <span id="opc"> </span>
+                </label>
+            </li>
+            <li>
+                <label class="option-label">
+                    <input type="radio" name="answer" value="D">
+                    Option D: <span id="opd"> </span>
+                </label>
+            </li>
+        </ul>
+        <div class="timer">
+            <div class="circle" id="countdown-timer"><span id="timesec">45</span>&nbsp;sec</div>
+            <div class="btn">
+                <button class="submit-button">Submit & Next</button>
+            </div>  
+        </div>   
+    </div>
+    <script src="script.js"></script>
+    <div id="result-modal" class="modal" style="display: none;">
+        <div id="result-message" class="modal-content">
+            <!-- Exam result message here -->
+            <p id="result-text">Exam result message here</p>
+            <button id="ok-button">OK</button>
+        </div>
+    </div>
+    
+</body>
+</html>
